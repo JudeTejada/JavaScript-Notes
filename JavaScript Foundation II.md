@@ -128,3 +128,41 @@ console.log(multiplyByTwo(2));
 Scope refers to the visibility of the variables where it was declared 
 
 Context - refers to the value of the this object. Which reference to the object that owns that current execution code
+
+
+
+[Link]: https://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing
+
+**Event capturing**
+
+When you use event capturing
+
+```js
+               | |
+---------------| |-----------------
+| element1     | |                |
+|   -----------| |-----------     |
+|   |element2  \ /          |     |
+|   -------------------------     |
+|        Event CAPTURING          |
+-----------------------------------
+```
+
+the event handler of element1 fires first, the event handler of element2 fires last.
+
+**Event bubbling**
+
+When you use event bubbling
+
+```js
+               / \
+---------------| |-----------------
+| element1     | |                |
+|   -----------| |-----------     |
+|   |element2  | |          |     |
+|   -------------------------     |
+|        Event BUBBLING           |
+-----------------------------------
+```
+
+the event handler of element2 fires first, the event handler of element1 fires last.
