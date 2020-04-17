@@ -1,5 +1,9 @@
 
 
+### Syntactical Sugar
+
+A term where a method or a code does the same thing but the code is done more prettier;
+
 ### Execution Context
 
 Every time we run code in the JS engine a global execution context is created. all global code that aren't inside of the function is executed inside the global execution context.
